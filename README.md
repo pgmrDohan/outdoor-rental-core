@@ -46,21 +46,21 @@ git clone https://github.com/pgmrDohan/outdoor-rental-core.git
 cd outdoor-rental-core
 ````
 
-### 2. Start the server
-
-```bash
-cd server
-npm install
-npm start
-```
-
-### 3. Create User
+### 2. Create User
 
 ```bash
 node create_user.js <name> <pw>
 node -e "console.log(require('jsonwebtoken').sign({userId:'<id in past line output>'}, 'YOUR_JWT_SECRET'))"
 ```
 Copy&Paste `app/lib/main.dart` on Line 117.
+
+### 3. Start the server
+
+```bash
+cd server
+npm install
+npm start
+```
 
 ### 4. Upload the Arduino sketch
 
@@ -72,6 +72,15 @@ Copy&Paste `app/lib/main.dart` on Line 117.
 ```bash
 node generate-slot.js <slot-name> <BLE MAC>
 ```
+
+### 6. Build APP
+
+```bash
+cd app
+flutter pub get
+flutter run --profile
+```
+> ⚠ Tested with iOS26 beta on iPhone 11 and had to modify `ios/Runner/AppDelete.swift`
 
 ---
 
