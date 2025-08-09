@@ -44,6 +44,7 @@ The server logs the events and sends commands to the Arduino, which operates a s
 ```bash
 git clone https://github.com/pgmrDohan/outdoor-rental-core.git
 cd outdoor-rental-core
+npm install
 ````
 
 ### 2. Create User (After starting and shutting down the server once)
