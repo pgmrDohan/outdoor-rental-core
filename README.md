@@ -46,7 +46,7 @@ git clone https://github.com/pgmrDohan/outdoor-rental-core.git
 cd outdoor-rental-core
 ````
 
-### 2. Create User
+### 2. Create User (After starting and shutting down the server once)
 
 ```bash
 node create_user.js <name> <pw>
